@@ -1,10 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
 }
-.text{
-    font-family: Arial;
-    font-style: normal;
+.text {
+  font-family: Arial;
+  font-style: normal;
+}
+#bold, #italic, #underline{
+    border-radius: 10px;
+    /* background-color: rgb(245, 245, 16); */
 }

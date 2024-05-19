@@ -15,8 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -25,7 +29,7 @@
 
         <div class="container-one my-5 d-flex justify-content-between">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" id="font-btn"
                     aria-expanded="false">
                     Font Family
                 </button>
@@ -33,23 +37,37 @@
                     <li><button class="dropdown-item fonts" type="button"
                             style="font-family: monospace;">monospace</button>
                     </li>
-                    <li><button class="dropdown-item fonts" type="button"
+                    <li>
+                        <button class="dropdown-item fonts" type="button"
                             style="font-family: sans-serif;">sans-serif</button>
                     </li>
-                    <li><button class="dropdown-item fonts" type="button" style="font-family: poppins;">Poppins</button>
+                    <li>
+                        <button class="dropdown-item fonts" type="button" style="font-family: Teachers;">Teachers</button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item fonts" type="button" style="font-family: Playfair Display;">Playfair Display</button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item fonts" type="button" style="font-family: Poetsen One;">Poetsen One</button>
                     </li>
                 </ul>
             </div>
             <div class="font-Style mx-4">
-                <span class="fw-bolder fs-3 mx-2 fontstyle">B</span>
-                <span class="fw-bolder fs-3 fst-italic mx-2 fontstyle">I</span>
-                <span class="fw-bolder fs-3 text-decoration-underline mx-2 fontstyle">U</span>
+                <i class="fa-solid fa-bold fontstyle mx-1 fs-5 p-2" id="bold"></i>
+                <i class="fa-solid fa-italic fontstyle mx-1 fs-5 p-2" id="italic"></i>
+                <i class="fa-solid fa-underline fontstyle mx-1 fs-5 p-2" id="underline"></i>
             </div>
         </div>
+        <form id="formSubmit">
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2Disabled">Add Your Text</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
         <div class="text-Area my-5">
-            <p class="fs-2 my-5" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, a fugit?
-                Quasi suscipit illo nemo
-                placeat odit consectetur doloribus quibusdam?</p>
+            <p class="fs-2 my-5" id="text"></p>
         </div>
 
 
